@@ -1,7 +1,7 @@
 /**
- * NorthPaw landing — light client behavior.
+ * NorthPaw landing: light client behavior.
  *
- * TODO: form provider — wire #waitlist-form and #survey-form to one of:
+ * TODO: form provider: wire #waitlist-form and #survey-form to one of:
  *   - MailerLite / ConvertKit / Beehiiv (embed or POST endpoint)
  *   - Cloudflare Worker + KV / D1
  *   - Formspree / Getform / Basin (form action + field names)
@@ -54,14 +54,14 @@
         return;
       }
 
-      // TODO: form provider — POST to your endpoint or mail provider
+      // TODO: form provider: POST to your endpoint or mail provider
       console.info("[NorthPaw waitlist] TODO: submit payload", {
         first_name: (waitlist.querySelector('[name="first_name"]') || {}).value,
         email: email.value.trim(),
       });
       showMsg(
         msg,
-        "Thanks — this form is not connected yet. Check script.js / index.html TODO to wire your provider.",
+        "Thanks. This form is not connected yet. Check script.js / index.html TODO to wire your provider.",
         "success"
       );
       waitlist.reset();
@@ -92,11 +92,11 @@
         }
       });
 
-      // TODO: form provider — send payload to survey tool / sheet / Worker
+      // TODO: form provider: send payload to survey tool / sheet / Worker
       console.info("[NorthPaw survey] TODO: submit payload", payload);
       showMsg(
         msg,
-        "Thanks — this survey is not connected yet. Wire the handler in script.js when your backend or form service is ready.",
+        "Thanks. This survey is not connected yet. Wire the handler in script.js when your backend or form service is ready.",
         "success"
       );
       survey.reset();

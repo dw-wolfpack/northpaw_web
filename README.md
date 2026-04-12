@@ -1,6 +1,6 @@
 # NorthPaw marketing site (static)
 
-Landing page for **northpaw.nextstepsbeyond.com** — validation, email capture, and a short survey. Pure HTML / CSS / JS, ready for **Cloudflare Pages**.
+Landing page for **northpaw.nextstepsbeyond.online**: validation, email capture, and a short survey. Pure HTML / CSS / JS, ready for **Cloudflare Pages**.
 
 ## Deploy on Cloudflare Pages
 
@@ -8,29 +8,29 @@ Landing page for **northpaw.nextstepsbeyond.com** — validation, email capture,
 2. **Root directory / build settings:**
    - If the Git repo root is this monorepo: set **Root directory** (or **Build output directory**, depending on UI) to `northpaw_subdomain`, **Framework preset**: None, **Build command**: leave empty.
    - If the Pages project is **only** this folder (subtree or separate repo): **Build command**: empty, **Build output directory**: `/` or `.`
-3. **Custom domain:** add `northpaw.nextstepsbeyond.com` in Pages → Custom domains and follow DNS (usually CNAME to `*.pages.dev`).
-4. After first deploy, confirm `https://northpaw.nextstepsbeyond.com/` loads and that `robots.txt` and `sitemap.xml` are reachable.
+3. **Custom domain:** add `northpaw.nextstepsbeyond.online` in Pages → Custom domains and follow DNS (usually CNAME to `*.pages.dev`).
+4. After first deploy, confirm `https://northpaw.nextstepsbeyond.online/` loads and that `robots.txt` and `sitemap.xml` are reachable.
 
 ## Where to edit copy
 
-- All page copy lives in [`index.html`](index.html). Search for `<!-- SECTION` comments to jump between sections.
+- All page copy lives in [`index.html`](index.html). Search for `<!-- ==========` section comments to jump between blocks.
 
 ## Where to drop real screenshots
 
-- **Hero:** [`index.html`](index.html) — search `REPLACE` / `hero-mock`. Replace the `<img src="assets/hero-mock.svg" …>` with your PNG/WebP (e.g. `assets/ready-hero.png`).
-- **Product preview:** three `.preview-shot` blocks — swap placeholder text for `<img>` tags pointing at files under [`assets/`](assets/).
+- **Hero:** [`index.html`](index.html): the hero uses `assets/hero-app.png` inside `.hero-mock`; swap the `src` (and dimensions) when you update the screenshot.
+- **Product preview:** three `.preview-shot` blocks with images under [`assets/`](assets/).
 - See [`assets/README.md`](assets/README.md) for a file checklist.
 
 ## Where to wire forms later
 
-1. **Waitlist** — [`index.html`](index.html): `<form id="waitlist-form" …>`. Today: `action="#"`.  
+1. **Waitlist:** [`index.html`](index.html) `<form id="waitlist-form">`. Today: `action="#"`.  
    - **Formspree / Getform:** set `action="https://formspree.io/f/YOUR_ID"` and `method="POST"`. Align `name="email"` / `name="first_name"` with their docs.
    - **MailerLite / ConvertKit / Beehiiv:** often a hosted form URL or embed; you may POST to their endpoint or use their generated HTML snippet inside the section.
    - **Cloudflare Worker:** `action` pointing to your worker, or keep `action="#"` and use `fetch()` in [`script.js`](script.js) (remove `preventDefault` once wired).
 
-2. **Survey** — `<form id="survey-form">` in [`index.html`](index.html). Field names are stable (`outing_frequency`, `check_weather`, …, `forget_second_guess`, `early_testing`, `survey_email`) for easy mapping to a sheet, Worker, or form backend.
+2. **Survey:** `<form id="survey-form">` in [`index.html`](index.html). Field names are stable (`outing_frequency`, `check_weather`, and other `check_*`, `most_useful`, `forget_second_guess`, `early_testing`, `survey_email`) for easy mapping to a sheet, Worker, or form backend.
 
-3. **Client-side handler** — [`script.js`](script.js): search `TODO: form provider`. Remove or adjust `preventDefault` when submissions should reach the network.
+3. **Client-side handler:** [`script.js`](script.js): search `TODO: form provider`. Remove or adjust `preventDefault` when submissions should reach the network.
 
 ## How to change metadata
 

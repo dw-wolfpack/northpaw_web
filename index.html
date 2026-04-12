@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NorthPaw — Know what matters before you go</title>
-  <meta name="description" content="NorthPaw helps dog owners prepare for outdoor outings with condition-aware guidance, simple packs, and lightweight follow-through." />
+  <title>NorthPaw | Know what matters before you go</title>
+  <meta name="description" content="NorthPaw helps dog owners prepare for outdoor outings with simple, condition-aware guidance on when to go, what to bring, and what to remember after." />
   <meta name="theme-color" content="#0d1f17" />
-  <link rel="canonical" href="https://northpaw.nextstepsbeyond.com/" />
+  <link rel="canonical" href="https://northpaw.nextstepsbeyond.online/" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://northpaw.nextstepsbeyond.com/" />
+  <meta property="og:url" content="https://northpaw.nextstepsbeyond.online/" />
   <meta property="og:title" content="NorthPaw" />
   <meta property="og:description" content="Know what matters before you go." />
-  <meta property="og:image" content="https://northpaw.nextstepsbeyond.com/assets/og-northpaw.png" />
+  <meta property="og:image" content="https://northpaw.nextstepsbeyond.online/assets/og-northpaw.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="NorthPaw" />
   <meta name="twitter:description" content="Know what matters before you go." />
-  <meta name="twitter:image" content="https://northpaw.nextstepsbeyond.com/assets/og-northpaw.png" />
+  <meta name="twitter:image" content="https://northpaw.nextstepsbeyond.online/assets/og-northpaw.png" />
 
   <!-- Placeholder favicon; replace assets/favicon.ico with a proper multi-size ICO when ready -->
   <link rel="icon" href="assets/favicon.ico" sizes="any" />
@@ -30,65 +30,63 @@
   <script src="script.js" defer></script>
 </head>
 <body>
+  <!-- ========== HEADER ========== -->
   <header class="site-header">
-    <div class="container">
+    <div class="container site-header-inner">
       <a class="logo" href="#">NorthPaw</a>
-      <nav class="header-ctas" aria-label="Quick actions">
-        <a class="btn btn-primary" href="#early-access">Join the early access list</a>
-        <a class="btn btn-secondary" href="#survey">Take the 60-second survey</a>
+      <nav class="header-ctas" aria-label="Primary actions">
+        <a class="btn btn-primary btn-header" href="#early-access">Join the early access list</a>
+        <a class="btn btn-secondary btn-header" href="#survey">Take the 60-second survey</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- ========== SECTION 1 — HERO ========== -->
-    <section class="hero section" aria-labelledby="hero-heading">
+    <!-- ========== HERO ========== -->
+    <section class="hero section section--hero" aria-labelledby="hero-heading">
       <div class="container hero-grid">
-        <div>
+        <div class="hero-copy">
           <p class="eyebrow">NorthPaw</p>
-          <h1 id="hero-heading">Know what matters before you go.</h1>
+          <h1 id="hero-heading">Know what matters before you go</h1>
           <p class="lead">
-            NorthPaw helps dog owners prepare for outdoor outings with condition-aware guidance, simple packs, and lightweight follow-through.
+            NorthPaw helps dog owners prepare for outdoor outings with simple, condition-aware guidance on when to go, what to bring, and what to remember after.
           </p>
           <p class="support-line">Not your map app. Not your vet app. Your readiness app.</p>
           <div class="cta-row">
             <a class="btn btn-primary" href="#early-access">Join the early access list</a>
             <a class="btn btn-secondary" href="#survey">Take the 60-second survey</a>
           </div>
-          <p class="microcopy">Be the first to test NorthPaw and help shape the launch.</p>
+          <p class="microcopy">Be one of the first to try NorthPaw and help shape what launches first.</p>
         </div>
         <div class="hero-mock-wrap">
-          <!-- REPLACE: swap inner content for <img src="assets/your-screenshot.png" alt="NorthPaw app screenshot" /> -->
-          <div class="hero-mock" role="img" aria-label="App mockup placeholder — replace with screenshot in assets/">
-            <img src="assets/hero-mock.svg" alt="" width="280" height="560" />
+          <div class="hero-mock">
+            <img
+              src="assets/hero-app.png"
+              alt="NorthPaw in-app Ready view: outing prep, conditions, and today’s plan"
+              width="1320"
+              height="2868"
+              loading="eager"
+              fetchpriority="high" />
           </div>
-          <p class="hero-mock-label">Placeholder mock — drop a real app screenshot here later.</p>
+          <p class="hero-mock-label">In-app Ready view. Layout may change before launch.</p>
         </div>
       </div>
     </section>
 
-    <!-- ========== SECTION 2 — WHY IT EXISTS ========== -->
-    <section class="section" aria-labelledby="why-heading">
+    <!-- ========== SHORT BENEFITS (3 cards) ========== -->
+    <section class="section section--compact" aria-labelledby="benefits-heading">
       <div class="container">
-        <h2 id="why-heading">Most dog outings start with guesswork.</h2>
-        <div class="section-intro">
-          <p>
-            You check the weather. You think about the trail. You try to remember water, towels, paw wipes, timing, and whatever you forgot last time.
-          </p>
-          <p>
-            NorthPaw is built for that moment right before you head out — when you want a quick read on what matters today, what to bring, and what to remember later.
-          </p>
-        </div>
-        <div class="card-grid">
-          <article class="card">
+        <h2 id="benefits-heading" class="sr-only">What NorthPaw focuses on</h2>
+        <div class="card-grid card-grid--tight">
+          <article class="card card--benefit">
             <h3>Know the window</h3>
             <p>See the best time to go and what changes later.</p>
           </article>
-          <article class="card">
+          <article class="card card--benefit">
             <h3>Pack smarter</h3>
-            <p>Get a simple checklist based on the outing and conditions.</p>
+            <p>Get a simple checklist based on the outing and today’s conditions.</p>
           </article>
-          <article class="card">
+          <article class="card card--benefit">
             <h3>Follow through lightly</h3>
             <p>Get calm reminders for things like muddy paws, tick checks, or seasonal care.</p>
           </article>
@@ -96,213 +94,230 @@
       </div>
     </section>
 
-    <!-- ========== SECTION 3 — HOW IT WORKS ========== -->
-    <section class="section" aria-labelledby="how-heading">
+    <!-- ========== CONDITIONS INTO ACTION ========== -->
+    <section class="section section--compact" aria-labelledby="conditions-heading">
       <div class="container">
-        <h2 id="how-heading">Local conditions, translated into action.</h2>
-        <p class="section-intro">
-          NorthPaw does not just show weather. It helps you interpret what today means for your dog outing.
-        </p>
-        <div class="steps">
-          <div class="step">
+        <h2 id="conditions-heading">Conditions, translated into action</h2>
+        <p class="lede-tight">NorthPaw does more than show weather. It helps you understand what today means for your dog outing.</p>
+        <div class="insight-grid">
+          <article class="insight-card">
             <h3>See what changed</h3>
-            <p>Rain later. Hotter than expected. Mud likely. Good window before sunset.</p>
-          </div>
-          <div class="step">
+            <p>Rain later, heat, mud, wind, low-light timing.</p>
+          </article>
+          <article class="insight-card">
             <h3>Know what to adjust</h3>
-            <p>Bring extra water. Pack a towel. Shorten the route. Go earlier.</p>
-          </div>
-          <div class="step">
+            <p>More water, a towel, shorter route, earlier start.</p>
+          </article>
+          <article class="insight-card">
             <h3>Head out with less second-guessing</h3>
-            <p>Use a quick pack, a short guidance card, and one follow-through reminder if it matters.</p>
-          </div>
+            <p>One quick read, one pack list, one reminder if it matters.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ========== SECTION 4 — PRODUCT PREVIEW ========== -->
+    <!-- ========== PRODUCT PROOF (lifestyle cards) ========== -->
     <section class="section" aria-labelledby="preview-heading">
       <div class="container">
-        <h2 id="preview-heading">A readiness-first app for dog life outside.</h2>
+        <p class="section-kicker">Product proof</p>
+        <h2 id="preview-heading">A readiness-first approach to dog life outside.</h2>
         <div class="preview-grid">
           <article class="preview-block">
-            <div class="preview-shot" aria-hidden="true">Ready screen — screenshot placeholder</div>
+            <div class="preview-shot">
+              <img
+                src="assets/preview-ready.png"
+                alt="Dog on a mountain trail, heading out with a clear read on the day"
+                width="1200"
+                height="900"
+                loading="lazy" />
+            </div>
             <div class="preview-body">
-              <h3>Ready screen</h3>
-              <p>See today’s condition summary, best window, and what changes later.</p>
+              <h3>Today’s read</h3>
+              <p>A plain-language take on conditions, the best window to be out, and what changes later.</p>
             </div>
           </article>
           <article class="preview-block">
-            <div class="preview-shot" aria-hidden="true">Packs &amp; checklists — screenshot placeholder</div>
+            <div class="preview-shot">
+              <img
+                src="assets/preview-packs.png"
+                alt="Dog on a forest path, packed for the outing ahead"
+                width="1200"
+                height="900"
+                loading="lazy" />
+            </div>
             <div class="preview-body">
               <h3>Packs &amp; checklists</h3>
-              <p>Get quick “before you go” packs tailored to the outing.</p>
+              <p>Short “before you go” lists shaped by where you’re headed, not a pile of generic gear advice.</p>
             </div>
           </article>
           <article class="preview-block">
-            <div class="preview-shot" aria-hidden="true">Field guide — screenshot placeholder</div>
+            <div class="preview-shot">
+              <img
+                src="assets/preview-field-guide.png"
+                alt="Dog beside map and pack, practical reference for time outside"
+                width="1200"
+                height="900"
+                loading="lazy" />
+            </div>
             <div class="preview-body">
               <h3>Field guide</h3>
-              <p>Short, practical reference cards for real-world dog outings.</p>
+              <p>Compact reference you can actually use on the trail. Real outings, not long articles to scroll.</p>
             </div>
           </article>
         </div>
-        <p class="caption">Mockups in progress — early access users will help shape the first release.</p>
+        <p class="caption">Photos are illustrative. Early access still helps shape what ships first.</p>
       </div>
     </section>
 
-    <!-- ========== SECTION 5 — WHO IT’S FOR ========== -->
-    <section class="section" aria-labelledby="who-heading">
+    <!-- ========== BUILT FOR ========== -->
+    <section class="section section--compact" aria-labelledby="built-heading">
       <div class="container">
-        <h2 id="who-heading">Built for dog owners who want to be prepared without overcomplicating it.</h2>
-        <ul class="bullet-list">
+        <h2 id="built-heading">Built for real dog outings</h2>
+        <ul class="bullet-list bullet-list--tight">
           <li>Neighborhood walks that turn into longer outings</li>
           <li>Weekend trail days</li>
-          <li>Park, beach, and car-based dog adventures</li>
-          <li>Owners who want practical guidance, not overwhelm</li>
+          <li>Park, beach, and car-based adventures</li>
+          <li>Dog owners who want practical guidance without opening five apps</li>
         </ul>
-        <p class="note">
-          NorthPaw is especially for the dog owner who wants to do right by their dog, but does not want five apps open just to leave the house.
-        </p>
+        <p class="note note--closing">NorthPaw is for people who want to be prepared without overcomplicating it.</p>
       </div>
     </section>
 
-    <!-- ========== SECTION 6 — WHAT MAKES IT DIFFERENT ========== -->
-    <section class="section" aria-labelledby="diff-heading">
+    <!-- ========== WHY DIFFERENT ========== -->
+    <section class="section section--compact" aria-labelledby="diff-heading">
       <div class="container">
         <h2 id="diff-heading">Why NorthPaw feels different</h2>
         <div class="compare-grid">
           <article class="compare-card">
-            <h3>Typical weather apps</h3>
-            <p>Show the forecast, but leave you to interpret what it means for your dog.</p>
+            <h3>Weather apps</h3>
+            <p>Show the forecast, but leave you to interpret it.</p>
           </article>
           <article class="compare-card">
-            <h3>Typical pet apps</h3>
-            <p>Focus on records, meds, or admin — not real outings.</p>
+            <h3>Pet apps</h3>
+            <p>Track records and routines, but not the outing itself.</p>
           </article>
           <article class="compare-card is-highlight">
             <h3>NorthPaw</h3>
             <p>Helps you decide what matters now, what to bring, and what to remember later.</p>
           </article>
         </div>
-        <p class="wedge-line">Interpretation, not information overload.</p>
       </div>
     </section>
 
-    <!-- ========== SECTION 7 — EARLY ACCESS FORM ========== -->
-    <section id="early-access" class="section form-section" aria-labelledby="access-heading">
+    <!-- ========== WAITLIST (primary conversion) ========== -->
+    <section id="early-access" class="section form-section section--waitlist" aria-labelledby="access-heading">
       <div class="container">
         <h2 id="access-heading">Get early access to NorthPaw</h2>
-        <p>Join the waitlist to get launch updates, early testing access, and occasional product previews.</p>
+        <p class="lede-tight">Join the waitlist for launch updates, early testing access, and occasional product previews.</p>
         <!--
-          TODO: form provider — set form action/method or submit via fetch:
-            - MailerLite / ConvertKit / Beehiiv embedded action URLs
-            - Formspree: action="https://formspree.io/f/xxxx" method="POST"
-            - Cloudflare Worker endpoint
-          Match `name` attributes to your provider’s field IDs.
+          TODO: form provider: set form action/method or submit via fetch:
+            MailerLite, ConvertKit, Beehiiv, Formspree, or Cloudflare Worker.
+          Match name attributes to your provider field IDs.
         -->
-        <form id="waitlist-form" class="form-card" action="#" method="post" novalidate>
-          <label for="waitlist-first">First name <span class="muted">(optional)</span></label>
-          <input id="waitlist-first" type="text" name="first_name" autocomplete="given-name" />
-
-          <label for="waitlist-email">Email <span aria-hidden="true">*</span></label>
-          <input id="waitlist-email" type="email" name="email" autocomplete="email" required />
-
-          <button type="submit" class="btn btn-primary">Join the waitlist</button>
-          <p class="microcopy" style="margin-bottom: 0">No spam. Just launch updates and early access.</p>
+        <form id="waitlist-form" class="form-card form-card--primary" action="#" method="post" novalidate>
+          <div class="field">
+            <label for="waitlist-first">First name <span class="muted">(optional)</span></label>
+            <input id="waitlist-first" type="text" name="first_name" autocomplete="given-name" />
+          </div>
+          <div class="field">
+            <label for="waitlist-email">Email <span class="req" aria-hidden="true">*</span></label>
+            <input id="waitlist-email" type="email" name="email" autocomplete="email" required aria-required="true" />
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Join the waitlist</button>
+          <p class="form-foot">No spam. Just launch updates and early access.</p>
           <p id="waitlist-msg" class="form-msg" role="status" aria-live="polite"></p>
         </form>
       </div>
     </section>
 
-    <!-- ========== SECTION 8 — 60-SECOND SURVEY ========== -->
-    <section id="survey" class="section form-section" aria-labelledby="survey-heading">
+    <!-- ========== SURVEY (secondary, lighter) ========== -->
+    <section id="survey" class="section form-section section--survey" aria-labelledby="survey-heading">
       <div class="container">
-        <h2 id="survey-heading">Help shape the first version</h2>
-        <p>A few quick questions will help prioritize what NorthPaw should do first.</p>
-        <!-- TODO: form provider — same options as waitlist; consider Google Forms embed or Worker + sheet -->
-        <form id="survey-form" class="form-card" action="#" method="post" novalidate>
-          <p class="fieldset-label">1. How often do you take your dog on outdoor outings beyond a normal neighborhood walk?</p>
-          <label class="option"><input type="radio" name="outing_frequency" value="few_per_week" /> A few times a week</label>
-          <label class="option"><input type="radio" name="outing_frequency" value="weekly" /> About weekly</label>
-          <label class="option"><input type="radio" name="outing_frequency" value="few_per_month" /> A few times a month</label>
-          <label class="option"><input type="radio" name="outing_frequency" value="rarely" /> Rarely</label>
+        <h2 id="survey-heading" class="survey-title">Help shape the first version</h2>
+        <p class="survey-lede">A few quick questions will help prioritize what NorthPaw should do first.</p>
+        <!-- TODO: form provider: same options as waitlist (Worker, Formspree, or embed) -->
+        <form id="survey-form" class="form-card form-card--survey" action="#" method="post" novalidate>
+          <fieldset class="survey-group">
+            <legend class="fieldset-label">1. How often do you take your dog on outdoor outings beyond a normal neighborhood walk?</legend>
+            <label class="option"><input type="radio" name="outing_frequency" value="few_per_week" /> A few times a week</label>
+            <label class="option"><input type="radio" name="outing_frequency" value="weekly" /> About weekly</label>
+            <label class="option"><input type="radio" name="outing_frequency" value="few_per_month" /> A few times a month</label>
+            <label class="option"><input type="radio" name="outing_frequency" value="rarely" /> Rarely</label>
+          </fieldset>
 
-          <p class="fieldset-label">2. Before heading out, what do you usually check?</p>
-          <label class="option"><input type="checkbox" name="check_weather" value="1" /> Weather</label>
-          <label class="option"><input type="checkbox" name="check_trail" value="1" /> Trail conditions</label>
-          <label class="option"><input type="checkbox" name="check_pack" value="1" /> What to pack</label>
-          <label class="option"><input type="checkbox" name="check_water_food" value="1" /> Water / food</label>
-          <label class="option"><input type="checkbox" name="check_time" value="1" /> Time of day</label>
-          <label class="option"><input type="checkbox" name="check_reminders" value="1" /> Reminders / care</label>
-          <label class="option"><input type="checkbox" name="check_wing_it" value="1" /> I mostly wing it</label>
+          <fieldset class="survey-group">
+            <legend class="fieldset-label">2. Before heading out, what do you usually check?</legend>
+            <label class="option"><input type="checkbox" name="check_weather" value="1" /> Weather</label>
+            <label class="option"><input type="checkbox" name="check_trail" value="1" /> Trail conditions</label>
+            <label class="option"><input type="checkbox" name="check_pack" value="1" /> What to pack</label>
+            <label class="option"><input type="checkbox" name="check_water_food" value="1" /> Water / food</label>
+            <label class="option"><input type="checkbox" name="check_time" value="1" /> Time of day</label>
+            <label class="option"><input type="checkbox" name="check_reminders" value="1" /> Reminders / care</label>
+            <label class="option"><input type="checkbox" name="check_wing_it" value="1" /> I mostly wing it</label>
+          </fieldset>
 
-          <p class="fieldset-label">3. What sounds most useful?</p>
-          <label class="option"><input type="radio" name="most_useful" value="best_window" /> Best outing window</label>
-          <label class="option"><input type="radio" name="most_useful" value="what_to_bring" /> What to bring</label>
-          <label class="option"><input type="radio" name="most_useful" value="weather_translated" /> Weather translated for my dog</label>
-          <label class="option"><input type="radio" name="most_useful" value="post_outing" /> Post-outing reminders</label>
-          <label class="option"><input type="radio" name="most_useful" value="field_guidance" /> Quick field guidance</label>
+          <fieldset class="survey-group">
+            <legend class="fieldset-label">3. What sounds most useful?</legend>
+            <label class="option"><input type="radio" name="most_useful" value="best_window" /> Best outing window</label>
+            <label class="option"><input type="radio" name="most_useful" value="what_to_bring" /> What to bring</label>
+            <label class="option"><input type="radio" name="most_useful" value="weather_translated" /> Weather translated for my dog</label>
+            <label class="option"><input type="radio" name="most_useful" value="post_outing" /> Post-outing reminders</label>
+            <label class="option"><input type="radio" name="most_useful" value="field_guidance" /> Quick field guidance</label>
+          </fieldset>
 
-          <label class="fieldset-label" for="survey-forget">4. What do you most often forget or second-guess?</label>
-          <textarea id="survey-forget" name="forget_second_guess" rows="4"></textarea>
+          <fieldset class="survey-group">
+            <label class="fieldset-label legend-style" for="survey-forget">4. What do you most often forget or second-guess?</label>
+            <textarea id="survey-forget" name="forget_second_guess" rows="3" placeholder="Optional"></textarea>
+          </fieldset>
 
-          <p class="fieldset-label">5. Would you be interested in early testing?</p>
-          <label class="option"><input type="radio" name="early_testing" value="yes" /> Yes</label>
-          <label class="option"><input type="radio" name="early_testing" value="maybe" /> Maybe</label>
-          <label class="option"><input type="radio" name="early_testing" value="not_now" /> Not right now</label>
+          <fieldset class="survey-group">
+            <legend class="fieldset-label">5. Would you be interested in early testing?</legend>
+            <label class="option"><input type="radio" name="early_testing" value="yes" /> Yes</label>
+            <label class="option"><input type="radio" name="early_testing" value="maybe" /> Maybe</label>
+            <label class="option"><input type="radio" name="early_testing" value="not_now" /> Not right now</label>
+          </fieldset>
 
-          <label for="survey-email">6. Email for follow-up <span class="muted">(optional if already entered above)</span></label>
-          <input id="survey-email" type="email" name="survey_email" autocomplete="email" />
+          <fieldset class="survey-group">
+            <label for="survey-email" class="fieldset-label legend-style">6. Email for follow-up <span class="muted">(optional if you already entered it above)</span></label>
+            <input id="survey-email" type="email" name="survey_email" autocomplete="email" />
+          </fieldset>
 
-          <button type="submit" class="btn btn-primary">Send feedback</button>
-          <p class="survey-note">Keep layout clean and fast. It should feel light, not like homework.</p>
+          <button type="submit" class="btn btn-secondary btn-block">Send feedback</button>
           <p id="survey-msg" class="form-msg" role="status" aria-live="polite"></p>
         </form>
       </div>
     </section>
-
-    <!-- ========== SECTION 9 — CLOSING CTA ========== -->
-    <section class="section" aria-labelledby="closing-heading">
-      <div class="container">
-        <h2 id="closing-heading">Prepared dogs. Smoother outings.</h2>
-        <p>NorthPaw is being built to make outdoor dog life feel simpler, calmer, and easier to trust.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="#early-access">Join the early access list</a>
-          <a class="btn btn-secondary" href="#survey">Take the survey</a>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <!-- ========== SECTION 10 — FOOTER ========== -->
+  <!-- ========== FOOTER + FINAL CTA ========== -->
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <p style="margin: 0; color: var(--text); font-weight: 700">NorthPaw</p>
-        <p style="margin: 0.5rem 0 0">A project by Next Steps Beyond</p>
-      </div>
-      <div class="footer-links">
-        <a href="https://nextstepsbeyond.com" rel="noopener noreferrer">nextstepsbeyond.com</a>
-        <!-- TODO: replace with real contact -->
-        <a href="mailto:hello@nextstepsbeyond.com">hello@nextstepsbeyond.com</a>
-        <!-- TODO: privacy policy URL when ready -->
-        <a href="#">Privacy <span style="opacity: 0.7">(placeholder)</span></a>
-        <!-- TODO: Instagram URL when ready -->
-        <a href="#">Instagram <span style="opacity: 0.7">(placeholder)</span></a>
+    <div class="container footer-cta-band">
+      <h2 class="footer-cta-title">Prepared dogs. Smoother outings.</h2>
+      <p class="footer-cta-lede">NorthPaw is being built to make outdoor dog life simpler, calmer, and easier to trust.</p>
+      <div class="cta-row cta-row--footer">
+        <a class="btn btn-primary" href="#early-access">Join the early access list</a>
+        <a class="btn btn-secondary" href="#survey">Take the survey</a>
       </div>
     </div>
-    <div class="container">
-      <p style="margin: var(--space-md) 0 0; font-size: 0.85rem; color: var(--muted)">
-        &copy; <span id="y"></span> NorthPaw. All rights reserved.
-      </p>
+
+    <div class="container footer-meta">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">NorthPaw</p>
+          <p class="footer-byline">A project by Next Steps Beyond</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://nextstepsbeyond.com" rel="noopener noreferrer">nextstepsbeyond.com</a>
+          <a href="mailto:hello@nextstepsbeyond.com">hello@nextstepsbeyond.com</a>
+          <a href="#">Privacy <span class="placeholder-tag">(placeholder)</span></a>
+          <a href="#">Instagram <span class="placeholder-tag">(placeholder)</span></a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2026 NorthPaw. All rights reserved.</p>
       <p class="disclaimer">
         NorthPaw provides educational and organizational support only and is not a substitute for veterinary advice.
       </p>
     </div>
   </footer>
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>

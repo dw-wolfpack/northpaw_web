@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://northpaw.nextstepsbeyond.com/sitemap.xml
+Sitemap: https://northpaw.nextstepsbeyond.online/sitemap.xml
