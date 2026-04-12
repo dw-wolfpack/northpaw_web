@@ -28,9 +28,9 @@ Landing page for **northpaw.nextstepsbeyond.online**: validation, email capture,
    - **MailerLite / ConvertKit / Beehiiv:** often a hosted form URL or embed; you may POST to their endpoint or use their generated HTML snippet inside the section.
    - **Cloudflare Worker:** `action` pointing to your worker, or keep `action="#"` and use `fetch()` in [`script.js`](script.js) (remove `preventDefault` once wired).
 
-2. **Survey:** `<form id="survey-form">` in [`index.html`](index.html). Field names are stable (`outing_frequency`, `check_weather`, and other `check_*`, `most_useful`, `forget_second_guess`, `early_testing`, `survey_email`) for easy mapping to a sheet, Worker, or form backend.
+2. **Survey:** Hosted on [Tally](https://tally.so/r/lb7Mxp). All survey CTAs in [`index.html`](index.html) use `target="_blank"` and `rel="noopener noreferrer"`; search for `tally.so/r/lb7Mxp` to update the link everywhere.
 
-3. **Client-side handler:** [`script.js`](script.js): search `TODO: form provider`. Remove or adjust `preventDefault` when submissions should reach the network.
+3. **Client-side:** [`script.js`](script.js) only smooth-scrolls in-page `#` links.
 
 ## How to change metadata
 

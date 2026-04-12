@@ -36,7 +36,11 @@
       <a class="logo" href="#">NorthPaw</a>
       <nav class="header-ctas" aria-label="Primary actions">
         <a class="btn btn-primary btn-header" href="#early-access">Join the early access list</a>
-        <a class="btn btn-secondary btn-header" href="#survey">Take the 60-second survey</a>
+        <a
+          class="btn btn-secondary btn-header"
+          href="https://tally.so/r/lb7Mxp"
+          target="_blank"
+          rel="noopener noreferrer">Take the 60-second survey</a>
       </nav>
     </div>
   </header>
@@ -54,7 +58,11 @@
           <p class="support-line">Not your map app. Not your vet app. Your readiness app.</p>
           <div class="cta-row">
             <a class="btn btn-primary" href="#early-access">Join the early access list</a>
-            <a class="btn btn-secondary" href="#survey">Take the 60-second survey</a>
+            <a
+              class="btn btn-secondary"
+              href="https://tally.so/r/lb7Mxp"
+              target="_blank"
+              rel="noopener noreferrer">Take the 60-second survey</a>
           </div>
           <p class="microcopy">Be one of the first to try NorthPaw and help shape what launches first.</p>
         </div>
@@ -209,82 +217,92 @@
       <div class="container">
         <h2 id="access-heading">Get early access to NorthPaw</h2>
         <p class="lede-tight">Join the waitlist for launch updates, early testing access, and occasional product previews.</p>
-        <!--
-          TODO: form provider: set form action/method or submit via fetch:
-            MailerLite, ConvertKit, Beehiiv, Formspree, or Cloudflare Worker.
-          Match name attributes to your provider field IDs.
-        -->
-        <form id="waitlist-form" class="form-card form-card--primary" action="#" method="post" novalidate>
-          <div class="field">
-            <label for="waitlist-first">First name <span class="muted">(optional)</span></label>
-            <input id="waitlist-first" type="text" name="first_name" autocomplete="given-name" />
+        <!-- MailerLite embedded form: colors and layout overridden in styles.css (.mailerlite-waitlist-wrap, #mlb2-39779360). -->
+        <div class="form-card form-card--primary mailerlite-waitlist-wrap">
+          <div id="mlb2-39779360" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-39779360">
+            <div class="ml-form-align-center">
+              <div class="ml-form-embedWrapper embedForm">
+                <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+                  <div class="ml-form-embedContent">
+                    <h4 class="ml-embed-heading">NorthPaw</h4>
+                    <p class="ml-embed-lede">Join the waitlist</p>
+                  </div>
+                  <form
+                    class="ml-block-form"
+                    action="https://assets.mailerlite.com/jsonp/2262172/forms/184507078984861072/subscribe"
+                    data-code=""
+                    method="post"
+                    target="_blank">
+                    <div class="ml-form-formContent">
+                      <div class="ml-form-fieldRow">
+                        <div class="ml-field-group ml-field-name">
+                          <label class="ml-label" for="ml-waitlist-name">First name <span class="muted">(optional)</span></label>
+                          <input
+                            id="ml-waitlist-name"
+                            aria-label="First name"
+                            type="text"
+                            class="form-control"
+                            name="fields[name]"
+                            placeholder="First name"
+                            autocomplete="given-name" />
+                        </div>
+                      </div>
+                      <div class="ml-form-fieldRow ml-last-item">
+                        <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                          <label class="ml-label" for="ml-waitlist-email">Email <span class="req" aria-hidden="true">*</span></label>
+                          <input
+                            id="ml-waitlist-email"
+                            aria-label="Email"
+                            aria-required="true"
+                            type="email"
+                            class="form-control"
+                            name="fields[email]"
+                            placeholder="Email"
+                            autocomplete="email"
+                            required />
+                        </div>
+                      </div>
+                    </div>
+                    <input type="hidden" name="ml-submit" value="1" />
+                    <div class="ml-form-embedSubmit">
+                      <button type="submit" class="primary">Join the waitlist</button>
+                      <button disabled="disabled" style="display: none" type="button" class="loading">
+                        <div class="ml-form-embedSubmitLoad"></div>
+                        <span class="sr-only">Loading</span>
+                      </button>
+                    </div>
+                    <input type="hidden" name="anticsrf" value="true" />
+                  </form>
+                </div>
+                <div class="ml-form-successBody row-success" style="display: none">
+                  <div class="ml-form-successContent">
+                    <h4>Thank you</h4>
+                    <p>You are on the list. Watch your inbox for launch updates.</p>
+                    <p class="ml-success-hint">A confirmation email is on the way. If you do not see it soon, check your spam or promotions folder.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="field">
-            <label for="waitlist-email">Email <span class="req" aria-hidden="true">*</span></label>
-            <input id="waitlist-email" type="email" name="email" autocomplete="email" required aria-required="true" />
-          </div>
-          <button type="submit" class="btn btn-primary btn-block">Join the waitlist</button>
           <p class="form-foot">No spam. Just launch updates and early access.</p>
-          <p id="waitlist-msg" class="form-msg" role="status" aria-live="polite"></p>
-        </form>
+        </div>
       </div>
     </section>
 
-    <!-- ========== SURVEY (secondary, lighter) ========== -->
+    <!-- ========== SURVEY (Tally, new tab) ========== -->
     <section id="survey" class="section form-section section--survey" aria-labelledby="survey-heading">
       <div class="container">
         <h2 id="survey-heading" class="survey-title">Help shape the first version</h2>
         <p class="survey-lede">A few quick questions will help prioritize what NorthPaw should do first.</p>
-        <!-- TODO: form provider: same options as waitlist (Worker, Formspree, or embed) -->
-        <form id="survey-form" class="form-card form-card--survey" action="#" method="post" novalidate>
-          <fieldset class="survey-group">
-            <legend class="fieldset-label">1. How often do you take your dog on outdoor outings beyond a normal neighborhood walk?</legend>
-            <label class="option"><input type="radio" name="outing_frequency" value="few_per_week" /> A few times a week</label>
-            <label class="option"><input type="radio" name="outing_frequency" value="weekly" /> About weekly</label>
-            <label class="option"><input type="radio" name="outing_frequency" value="few_per_month" /> A few times a month</label>
-            <label class="option"><input type="radio" name="outing_frequency" value="rarely" /> Rarely</label>
-          </fieldset>
-
-          <fieldset class="survey-group">
-            <legend class="fieldset-label">2. Before heading out, what do you usually check?</legend>
-            <label class="option"><input type="checkbox" name="check_weather" value="1" /> Weather</label>
-            <label class="option"><input type="checkbox" name="check_trail" value="1" /> Trail conditions</label>
-            <label class="option"><input type="checkbox" name="check_pack" value="1" /> What to pack</label>
-            <label class="option"><input type="checkbox" name="check_water_food" value="1" /> Water / food</label>
-            <label class="option"><input type="checkbox" name="check_time" value="1" /> Time of day</label>
-            <label class="option"><input type="checkbox" name="check_reminders" value="1" /> Reminders / care</label>
-            <label class="option"><input type="checkbox" name="check_wing_it" value="1" /> I mostly wing it</label>
-          </fieldset>
-
-          <fieldset class="survey-group">
-            <legend class="fieldset-label">3. What sounds most useful?</legend>
-            <label class="option"><input type="radio" name="most_useful" value="best_window" /> Best outing window</label>
-            <label class="option"><input type="radio" name="most_useful" value="what_to_bring" /> What to bring</label>
-            <label class="option"><input type="radio" name="most_useful" value="weather_translated" /> Weather translated for my dog</label>
-            <label class="option"><input type="radio" name="most_useful" value="post_outing" /> Post-outing reminders</label>
-            <label class="option"><input type="radio" name="most_useful" value="field_guidance" /> Quick field guidance</label>
-          </fieldset>
-
-          <fieldset class="survey-group">
-            <label class="fieldset-label legend-style" for="survey-forget">4. What do you most often forget or second-guess?</label>
-            <textarea id="survey-forget" name="forget_second_guess" rows="3" placeholder="Optional"></textarea>
-          </fieldset>
-
-          <fieldset class="survey-group">
-            <legend class="fieldset-label">5. Would you be interested in early testing?</legend>
-            <label class="option"><input type="radio" name="early_testing" value="yes" /> Yes</label>
-            <label class="option"><input type="radio" name="early_testing" value="maybe" /> Maybe</label>
-            <label class="option"><input type="radio" name="early_testing" value="not_now" /> Not right now</label>
-          </fieldset>
-
-          <fieldset class="survey-group">
-            <label for="survey-email" class="fieldset-label legend-style">6. Email for follow-up <span class="muted">(optional if you already entered it above)</span></label>
-            <input id="survey-email" type="email" name="survey_email" autocomplete="email" />
-          </fieldset>
-
-          <button type="submit" class="btn btn-secondary btn-block">Send feedback</button>
-          <p id="survey-msg" class="form-msg" role="status" aria-live="polite"></p>
-        </form>
+        <div class="form-card form-card--survey survey-tally-card">
+          <p class="survey-tally-note">NorthPaw Early Feedback on Tally. Opens in a new tab when you continue below.</p>
+          <a
+            class="btn btn-secondary btn-block"
+            href="https://tally.so/r/lb7Mxp"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open NorthPaw early feedback survey on Tally in a new tab">Take the 60-second survey</a>
+        </div>
       </div>
     </section>
   </main>
@@ -296,7 +314,11 @@
       <p class="footer-cta-lede">NorthPaw is being built to make outdoor dog life simpler, calmer, and easier to trust.</p>
       <div class="cta-row cta-row--footer">
         <a class="btn btn-primary" href="#early-access">Join the early access list</a>
-        <a class="btn btn-secondary" href="#survey">Take the survey</a>
+        <a
+          class="btn btn-secondary"
+          href="https://tally.so/r/lb7Mxp"
+          target="_blank"
+          rel="noopener noreferrer">Take the survey</a>
       </div>
     </div>
 
@@ -319,5 +341,19 @@
       </p>
     </div>
   </footer>
+
+  <!-- MailerLite webforms (waitlist): keep after embed markup; requires MailerLite script + success callback -->
+  <script>
+    function ml_webform_success_39779360() {
+      var $ = window.ml_jQuery || window.jQuery;
+      if (!$) return;
+      $(".ml-subscribe-form-39779360 .row-success").show();
+      $(".ml-subscribe-form-39779360 .row-form").hide();
+    }
+  </script>
+  <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v95037e5bac78f29ed026832ca21a7c7b"></script>
+  <script>
+    fetch("https://assets.mailerlite.com/jsonp/2262172/forms/184507078984861072/take").catch(function () {});
+  </script>
 </body>
 </html>

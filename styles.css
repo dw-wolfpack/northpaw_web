@@ -752,6 +752,18 @@ textarea {
   font-size: 0.9rem;
 }
 
+.survey-tally-card {
+  text-align: center;
+}
+
+.survey-tally-note {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 0 var(--space-md);
+  line-height: 1.45;
+}
+
+
 input:focus,
 textarea:focus {
   outline: none;
@@ -914,4 +926,167 @@ legend.fieldset-label {
   opacity: 0.9;
   margin-top: var(--space-lg);
   max-width: 48rem;
+}
+
+/* ----- MailerLite waitlist (#mlb2-39779360): on-brand overrides ----- */
+/* Adjust colors here (or :root tokens above) if you want the embed to track site tweaks. */
+.mailerlite-waitlist-wrap.form-card--primary {
+  padding-bottom: var(--space-md);
+}
+
+#mlb2-39779360.ml-form-embedContainer {
+  width: 100% !important;
+  max-width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  position: static;
+}
+
+#mlb2-39779360 .ml-form-embedWrapper.embedForm {
+  max-width: 100% !important;
+  width: 100% !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#mlb2-39779360 .ml-form-embedBody.row-form {
+  padding: 0 !important;
+}
+
+/* Section heading already carries the pitch; hide MailerLite header to reduce noise */
+#mlb2-39779360 .ml-form-embedContent {
+  display: none;
+}
+
+#mlb2-39779360 .ml-form-formContent {
+  margin: 0 !important;
+}
+
+#mlb2-39779360 .ml-form-fieldRow {
+  margin: 0 0 var(--space-md) 0 !important;
+  width: 100% !important;
+  float: none !important;
+}
+
+#mlb2-39779360 .ml-form-fieldRow.ml-last-item {
+  margin-bottom: 0 !important;
+}
+
+#mlb2-39779360 .ml-label {
+  font-family: var(--font) !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  color: var(--text) !important;
+  margin-bottom: var(--space-xs) !important;
+}
+
+#mlb2-39779360 .form-control {
+  font-family: var(--font) !important;
+  font-size: 1rem !important;
+  line-height: 1.4 !important;
+  color: var(--text) !important;
+  background: var(--bg-elevated) !important;
+  border: 1px solid var(--border-strong) !important;
+  border-radius: var(--radius-sm) !important;
+  padding: 0.65rem 0.85rem !important;
+  width: 100% !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+
+#mlb2-39779360 .form-control:focus {
+  outline: none !important;
+  border-color: var(--accent-soft) !important;
+  box-shadow: 0 0 0 3px rgba(64, 145, 108, 0.2) !important;
+}
+
+#mlb2-39779360 .form-control::placeholder {
+  color: var(--muted) !important;
+  opacity: 1;
+}
+
+#mlb2-39779360 .ml-form-embedSubmit {
+  margin: var(--space-md) 0 0 0 !important;
+  float: none !important;
+  width: 100% !important;
+}
+
+#mlb2-39779360 .ml-form-embedSubmit button.primary {
+  font-family: var(--font) !important;
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  width: 100% !important;
+  padding: 0.85rem 1.35rem !important;
+  background: var(--accent) !important;
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: var(--radius-sm) !important;
+  cursor: pointer !important;
+  box-shadow: none !important;
+}
+
+#mlb2-39779360 .ml-form-embedSubmit button.primary:hover {
+  background: var(--accent-soft) !important;
+}
+
+#mlb2-39779360 .ml-form-successBody .ml-form-successContent {
+  padding: var(--space-sm) 0 0 !important;
+  text-align: center;
+}
+
+#mlb2-39779360 .ml-form-successBody h4 {
+  font-family: var(--font) !important;
+  color: var(--text) !important;
+  font-size: 1.35rem !important;
+  font-weight: 800 !important;
+  margin: 0 0 var(--space-sm) !important;
+}
+
+#mlb2-39779360 .ml-form-successBody p {
+  font-family: var(--font) !important;
+  color: var(--muted) !important;
+  margin: 0 !important;
+  font-size: 0.95rem !important;
+}
+
+#mlb2-39779360 .ml-form-successBody p.ml-success-hint {
+  margin-top: var(--space-sm) !important;
+  font-size: 0.88rem !important;
+  line-height: 1.45 !important;
+  opacity: 0.95;
+}
+
+.ml-form-embedSubmitLoad {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.ml-form-embedSubmitLoad::after {
+  content: " ";
+  display: block;
+  width: 11px;
+  height: 11px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  border-color: #ffffff #ffffff #ffffff transparent;
+  animation: ml-form-embedSubmitLoad 1.2s linear infinite;
+}
+
+@keyframes ml-form-embedSubmitLoad {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#mlb2-39779360 .ml-error input {
+  border-color: #c96b5a !important;
 }
