@@ -1128,3 +1128,97 @@ legend.fieldset-label {
 #mlb2-39779360 .ml-error input {
   border-color: #c96b5a !important;
 }
+
+/* ----- privacy / legal subpages (privacy/index.html) ----- */
+.privacy-hero {
+  padding: var(--space-xl) 0 var(--space-md);
+}
+
+.privacy-meta {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin: 0;
+  max-width: var(--prose);
+}
+
+.privacy-stack {
+  padding-bottom: var(--space-2xl);
+}
+
+.privacy-card h2 {
+  margin: var(--space-xl) 0 var(--space-sm);
+  max-width: none;
+  color: var(--text);
+}
+
+.privacy-card h2:first-of-type {
+  margin-top: 0;
+}
+
+.privacy-card h3 {
+  margin: var(--space-lg) 0 var(--space-xs);
+  color: var(--text);
+}
+
+.privacy-card p {
+  margin: 0 0 var(--space-md);
+  max-width: none;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.privacy-card ul {
+  margin: 0 0 var(--space-md);
+  padding-left: 1.35rem;
+  color: var(--muted);
+  max-width: none;
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.privacy-card li + li {
+  margin-top: var(--space-xs);
+}
+
+.privacy-card strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.privacy-note {
+  margin-top: var(--space-lg);
+  margin-bottom: 0;
+  padding: var(--space-md);
+  border-radius: var(--radius);
+  background: rgba(64, 145, 108, 0.12);
+  border: 1px solid rgba(64, 145, 108, 0.28);
+  color: var(--text);
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.privacy-footer-min {
+  padding: var(--space-lg) 0 var(--space-xl);
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.privacy-footer-line {
+  margin: 0 0 var(--space-sm);
+  color: var(--text);
+  font-weight: 700;
+}
+
+.privacy-footer-links {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--space-sm) var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.privacy-footer-min .footer-copy {
+  margin-top: var(--space-md);
+  text-align: left;
+}
