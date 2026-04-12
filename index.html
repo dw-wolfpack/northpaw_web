@@ -19,9 +19,12 @@
   <meta name="twitter:description" content="Know what matters before you go." />
   <meta name="twitter:image" content="https://northpaw.nextstepsbeyond.online/assets/og-northpaw.png" />
 
-  <!-- Placeholder favicon; replace assets/favicon.ico with a proper multi-size ICO when ready -->
-  <link rel="icon" href="assets/favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png" />
+  <!-- Favicons: paths relative to this file (works on file:// and on Cloudflare Pages). Bump ?v= after changing art. -->
+  <link rel="icon" href="favicon.ico?v=4" sizes="any" />
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png?v=4" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png?v=4" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png?v=4" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=4" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,7 +36,16 @@
   <!-- ========== HEADER ========== -->
   <header class="site-header">
     <div class="container site-header-inner">
-      <a class="logo" href="#">NorthPaw</a>
+      <a class="logo" href="#" aria-label="NorthPaw home">
+        <img
+          class="logo-mark"
+          src="assets/brand/northpaw-mark-header.png"
+          width="128"
+          height="128"
+          alt=""
+          decoding="async" />
+        <span class="logo-text">NorthPaw</span>
+      </a>
       <nav class="header-ctas" aria-label="Primary actions">
         <a class="btn btn-primary btn-header" href="#early-access">Join the early access list</a>
         <a

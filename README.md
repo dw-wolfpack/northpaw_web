@@ -39,7 +39,7 @@ Landing page for **northpaw.nextstepsbeyond.online**: validation, email capture,
 
 ## Favicon
 
-- [`index.html`](index.html) references [`assets/favicon.ico`](assets/favicon.ico) (primary) and [`assets/favicon.png`](assets/favicon.png) (fallback). The current `.ico` is a placeholder copy of the PNG; replace with a proper ICO when you have brand assets.
+- Favicons: PNGs under [`assets/`](assets/) plus [`favicon.ico`](favicon.ico) next to [`index.html`](index.html) (PNG bytes for default favicon requests). [`index.html`](index.html) uses **paths relative to the HTML file** (`assets/...`, `favicon.ico`) so images and icons work when you open the file locally (`file://`) and when deployed. Bump `?v=` in those links when the art changes (favicon caching). Regenerate sizes from [`assets/brand/northpaw-mark-transparent.png`](assets/brand/northpaw-mark-transparent.png) with `sips`, then `cp assets/favicon.png favicon.ico` if you replace the mark.
 
 ## Swapping survey / email provider (notes)
 
