@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="560" viewBox="0 0 280 560" fill="none" aria-hidden="true">
+  <rect x="12" y="12" width="256" height="536" rx="36" stroke="rgba(255,255,255,0.35)" stroke-width="2" fill="rgba(0,0,0,0.15)"/>
+  <rect x="96" y="28" width="88" height="22" rx="11" fill="rgba(0,0,0,0.25)"/>
+  <text x="140" y="290" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="system-ui,sans-serif" font-size="13">Screenshot</text>
+</svg>

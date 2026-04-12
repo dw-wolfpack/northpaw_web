@@ -1,0 +1,58 @@
+# NorthPaw marketing site (static)
+
+Landing page for **northpaw.nextstepsbeyond.com** — validation, email capture, and a short survey. Pure HTML / CSS / JS, ready for **Cloudflare Pages**.
+
+## Deploy on Cloudflare Pages
+
+1. In [Cloudflare Dashboard](https://dash.cloudflare.com/) → **Workers & Pages** → **Create** → **Pages** → Connect your Git repository.
+2. **Root directory / build settings:**
+   - If the Git repo root is this monorepo: set **Root directory** (or **Build output directory**, depending on UI) to `northpaw_subdomain`, **Framework preset**: None, **Build command**: leave empty.
+   - If the Pages project is **only** this folder (subtree or separate repo): **Build command**: empty, **Build output directory**: `/` or `.`
+3. **Custom domain:** add `northpaw.nextstepsbeyond.com` in Pages → Custom domains and follow DNS (usually CNAME to `*.pages.dev`).
+4. After first deploy, confirm `https://northpaw.nextstepsbeyond.com/` loads and that `robots.txt` and `sitemap.xml` are reachable.
+
+## Where to edit copy
+
+- All page copy lives in [`index.html`](index.html). Search for `<!-- SECTION` comments to jump between sections.
+
+## Where to drop real screenshots
+
+- **Hero:** [`index.html`](index.html) — search `REPLACE` / `hero-mock`. Replace the `<img src="assets/hero-mock.svg" …>` with your PNG/WebP (e.g. `assets/ready-hero.png`).
+- **Product preview:** three `.preview-shot` blocks — swap placeholder text for `<img>` tags pointing at files under [`assets/`](assets/).
+- See [`assets/README.md`](assets/README.md) for a file checklist.
+
+## Where to wire forms later
+
+1. **Waitlist** — [`index.html`](index.html): `<form id="waitlist-form" …>`. Today: `action="#"`.  
+   - **Formspree / Getform:** set `action="https://formspree.io/f/YOUR_ID"` and `method="POST"`. Align `name="email"` / `name="first_name"` with their docs.
+   - **MailerLite / ConvertKit / Beehiiv:** often a hosted form URL or embed; you may POST to their endpoint or use their generated HTML snippet inside the section.
+   - **Cloudflare Worker:** `action` pointing to your worker, or keep `action="#"` and use `fetch()` in [`script.js`](script.js) (remove `preventDefault` once wired).
+
+2. **Survey** — `<form id="survey-form">` in [`index.html`](index.html). Field names are stable (`outing_frequency`, `check_weather`, …, `forget_second_guess`, `early_testing`, `survey_email`) for easy mapping to a sheet, Worker, or form backend.
+
+3. **Client-side handler** — [`script.js`](script.js): search `TODO: form provider`. Remove or adjust `preventDefault` when submissions should reach the network.
+
+## How to change metadata
+
+- Open [`index.html`](index.html) `<head>`: `<title>`, `<meta name="description">`, `<link rel="canonical">`, Open Graph (`og:*`), Twitter (`twitter:*`).
+- **OG image:** replace [`assets/og-northpaw.png`](assets/og-northpaw.png) with a branded **1200×630** image; keep the same filename or update `og:image` / `twitter:image` URLs to match.
+
+## Favicon
+
+- [`index.html`](index.html) references [`assets/favicon.ico`](assets/favicon.ico) (primary) and [`assets/favicon.png`](assets/favicon.png) (fallback). The current `.ico` is a placeholder copy of the PNG; replace with a proper ICO when you have brand assets.
+
+## Swapping survey / email provider (notes)
+
+- **CORS:** browser `fetch()` to a third-party API may be blocked; hosted form `action` POSTs or a same-origin Worker proxy are common fixes.
+- **Spam:** add honeypot or Turnstile later if needed (out of scope for this static MVP).
+- **GDPR / privacy:** update footer Privacy link when you publish a policy.
+
+## Local preview
+
+From this directory:
+
+```bash
+python3 -m http.server 8080
+```
+
+Open `http://localhost:8080`.
