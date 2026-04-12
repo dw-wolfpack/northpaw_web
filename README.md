@@ -45,7 +45,7 @@ Landing page for **northpaw.nextstepsbeyond.online**: validation, email capture,
 
 - **CORS:** browser `fetch()` to a third-party API may be blocked; hosted form `action` POSTs or a same-origin Worker proxy are common fixes.
 - **Spam:** add honeypot or Turnstile later if needed (out of scope for this static MVP).
-- **GDPR / privacy:** update footer Privacy link when you publish a policy.
+- **GDPR / privacy:** add a policy link in the footer if you start collecting data beyond what MailerLite / Tally handle in their terms.
 
 ## Local preview
 

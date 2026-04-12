@@ -940,11 +940,6 @@ legend.fieldset-label {
   color: var(--muted);
 }
 
-.placeholder-tag {
-  font-weight: 400;
-  opacity: 0.75;
-}
-
 .footer-grid {
   display: grid;
   gap: var(--space-lg);
