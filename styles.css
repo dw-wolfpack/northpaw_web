@@ -240,6 +240,134 @@ p {
   max-width: var(--prose);
 }
 
+.support-line--hero {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: -0.01em;
+  margin-top: -0.15rem;
+  margin-bottom: var(--space-md);
+}
+
+.hero-waitlist {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-sm);
+  max-width: 28rem;
+}
+
+.hero-email-input {
+  flex: 1 1 12rem;
+  min-width: 0;
+  padding: 0.75rem 0.9rem;
+  font: inherit;
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+}
+
+.hero-email-input:focus {
+  outline: none;
+  border-color: var(--accent-soft);
+  box-shadow: 0 0 0 3px rgba(64, 145, 108, 0.2);
+}
+
+.hero-email-input[aria-invalid="true"] {
+  border-color: #c96b5a;
+}
+
+.hero-waitlist-submit {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.hero-incentive {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--muted);
+  max-width: var(--prose);
+  margin: 0 0 var(--space-md);
+}
+
+.hero-incentive strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.social-proof {
+  display: block;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: var(--space-xs);
+}
+
+.hero-survey-quiet {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin: var(--space-md) 0 0;
+  max-width: var(--prose);
+}
+
+.hero-survey-quiet a {
+  font-weight: 600;
+}
+
+.hero-survey-hint {
+  display: block;
+  margin-top: var(--space-xs);
+  opacity: 0.9;
+}
+
+.header-survey-quiet {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid transparent;
+  align-self: center;
+}
+
+.header-survey-quiet:hover {
+  color: var(--accent-soft);
+  border-bottom-color: rgba(64, 145, 108, 0.45);
+}
+
+.cta-row--footer-stacked {
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.footer-survey-quiet {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer-survey-quiet:hover {
+  color: var(--accent-soft);
+}
+
+.survey-link-primary {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--accent-soft);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.survey-link-primary:hover {
+  color: var(--text);
+}
+
 .microcopy {
   font-size: 0.85rem;
   color: var(--muted);
@@ -797,6 +925,10 @@ textarea {
 
 .survey-tally-card {
   text-align: center;
+}
+
+.survey-tally-card .survey-link-primary {
+  margin-top: var(--space-md);
 }
 
 .survey-tally-note {

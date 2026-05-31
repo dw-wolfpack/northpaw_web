@@ -1,6 +1,6 @@
 # NorthPaw marketing site (static)
 
-Landing page for **northpaw.nextstepsbeyond.online**: validation, email capture, and a short survey. Pure HTML / CSS / JS, ready for **Cloudflare Pages**.
+Release page for **northpaw.nextstepsbeyond.online**: product overview, stay-connected email capture, support, privacy, and a short survey. Pure HTML / CSS / JS, ready for **Cloudflare Pages**.
 
 ## Deploy on Cloudflare Pages
 
@@ -21,16 +21,13 @@ Landing page for **northpaw.nextstepsbeyond.online**: validation, email capture,
 - **Product preview:** three `.preview-shot` blocks with images under [`assets/`](assets/).
 - See [`assets/README.md`](assets/README.md) for a file checklist.
 
-## Where to wire forms later
+## Where forms are wired
 
-1. **Waitlist:** [`index.html`](index.html) `<form id="waitlist-form">`. Today: `action="#"`.  
-   - **Formspree / Getform:** set `action="https://formspree.io/f/YOUR_ID"` and `method="POST"`. Align `name="email"` / `name="first_name"` with their docs.
-   - **MailerLite / ConvertKit / Beehiiv:** often a hosted form URL or embed; you may POST to their endpoint or use their generated HTML snippet inside the section.
-   - **Cloudflare Worker:** `action` pointing to your worker, or keep `action="#"` and use `fetch()` in [`script.js`](script.js) (remove `preventDefault` once wired).
+1. **Stay connected:** [`index.html`](index.html) uses the embedded MailerLite form. The hero email field forwards into the MailerLite form through [`script.js`](script.js).
 
 2. **Survey:** Hosted on [Tally](https://tally.so/r/lb7Mxp). All survey CTAs in [`index.html`](index.html) use `target="_blank"` and `rel="noopener noreferrer"`; search for `tally.so/r/lb7Mxp` to update the link everywhere.
 
-3. **Client-side:** [`script.js`](script.js) only smooth-scrolls in-page `#` links.
+3. **Client-side:** [`script.js`](script.js) smooth-scrolls in-page `#` links and forwards the hero email field into the MailerLite form.
 
 ## How to change metadata
 

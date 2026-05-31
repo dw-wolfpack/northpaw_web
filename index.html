@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NorthPaw | Know what matters before you go</title>
-  <meta name="description" content="NorthPaw helps dog owners prepare for outdoor outings with simple, condition-aware guidance on when to go, what to bring, and what to remember after." />
+  <title>NorthPaw | Safe Dog Outings & Guides</title>
+  <meta name="description" content="NorthPaw helps dog owners understand pavement safety, customize safety timelines, and manage dynamic pack checklists to keep dogs comfortable outdoors." />
   <meta name="theme-color" content="#0d1f17" />
   <link rel="canonical" href="https://northpaw.nextstepsbeyond.online/" />
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://northpaw.nextstepsbeyond.online/" />
-  <meta property="og:title" content="NorthPaw" />
-  <meta property="og:description" content="Know what matters before you go." />
+  <meta property="og:title" content="NorthPaw — Safe Dog Outings & Guides" />
+  <meta property="og:description" content="Understand pavement safety, customize safety timelines, and manage dynamic pack checklists for safer dog outings." />
   <meta property="og:image" content="https://northpaw.nextstepsbeyond.online/assets/og-northpaw.png?v=5" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="NorthPaw" />
-  <meta name="twitter:description" content="Know what matters before you go." />
+  <meta name="twitter:title" content="NorthPaw — Safe Dog Outings & Guides" />
+  <meta name="twitter:description" content="Understand pavement safety, customize safety timelines, and manage dynamic pack checklists for safer dog outings." />
   <meta name="twitter:image" content="https://northpaw.nextstepsbeyond.online/assets/og-northpaw.png?v=5" />
 
   <!-- Favicons: paths relative to this file (works on file:// and on Cloudflare Pages). Bump ?v= after changing art. -->
@@ -47,12 +47,12 @@
         <span class="logo-text">NorthPaw</span>
       </a>
       <nav class="header-ctas" aria-label="Primary actions">
-        <a class="btn btn-primary btn-header" href="#early-access">Join the early access list</a>
+        <a class="btn btn-primary btn-header" href="#early-access">Stay connected</a>
         <a
-          class="btn btn-secondary btn-header"
+          class="header-survey-quiet"
           href="https://tally.so/r/lb7Mxp"
           target="_blank"
-          rel="noopener noreferrer">Take the 60-second survey</a>
+          rel="noopener noreferrer">60-second survey</a>
       </nav>
     </div>
   </header>
@@ -63,28 +63,45 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">NorthPaw</p>
-          <h1 id="hero-heading">Know what matters before you go</h1>
+          <h1 id="hero-heading">NorthPaw — Safe Dog Outings &amp; Guides</h1>
+          <p class="support-line support-line--hero">Understand pavement safety before paws hit the ground.</p>
           <p class="lead">
-            NorthPaw helps dog owners prepare for outdoor outings with simple, condition-aware guidance on when to go, what to bring, and what to remember after.
+            Understand pavement safety, customize safety timelines, and manage dynamic pack checklists to keep your dog comfortable outdoors.
           </p>
-          <p class="support-line">Not your map app. Not your vet app. Your readiness app.</p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#early-access">Join the early access list</a>
-            <a
-              class="btn btn-secondary"
-              href="https://tally.so/r/lb7Mxp"
-              target="_blank"
-              rel="noopener noreferrer">Take the 60-second survey</a>
-          </div>
-          <p class="microcopy">Be one of the first to try NorthPaw and help shape what launches first.</p>
+          <p class="support-line">Thermodynamic surface timelines, dog-specific risk scoring, and offline field guidance in one release-ready companion.</p>
+          <form id="hero-waitlist" class="hero-waitlist" action="#" novalidate aria-label="Stay connected with email">
+            <label class="sr-only" for="hero-email">Email address</label>
+            <input
+              id="hero-email"
+              class="hero-email-input"
+              type="email"
+              name="hero_email"
+              autocomplete="email"
+              inputmode="email"
+              placeholder="Email for updates"
+              required />
+            <button type="submit" class="btn btn-primary hero-waitlist-submit">Stay connected</button>
+          </form>
+          <p class="hero-incentive">
+            Get launch notes, product updates, and practical outing safety resources as NorthPaw rolls out.
+          </p>
+          <!-- Bump social-proof count periodically as your list grows. -->
+          <p class="microcopy">
+            <span class="social-proof">Stay connected with NorthPaw release updates.</span>
+            Want to add your name? <a href="#early-access">Use the full form below</a>.
+          </p>
+          <p class="hero-survey-quiet">
+            <a href="https://tally.so/r/lb7Mxp" target="_blank" rel="noopener noreferrer">Take the 60-second survey</a>
+            <span class="hero-survey-hint">Optional. Helps us prioritize what to improve next.</span>
+          </p>
         </div>
         <div class="hero-mock-wrap">
           <div class="hero-mock">
             <img
               src="assets/hero-app.png"
-              alt="NorthPaw in-app Ready view: outing prep, conditions, and today’s plan"
-              width="1320"
-              height="2868"
+              alt="NorthPaw Ready screen showing a dog profile, NPI score, and today's pavement safety timeline"
+              width="513"
+              height="1024"
               loading="eager"
               fetchpriority="high" />
           </div>
@@ -99,16 +116,16 @@
         <h2 id="benefits-heading" class="sr-only">What NorthPaw focuses on</h2>
         <div class="card-grid card-grid--tight">
           <article class="card card--benefit">
-            <h3>Know the window</h3>
-            <p>See the best time to go and what changes later.</p>
+            <h3>See surface heat by hour</h3>
+            <p>Review estimated asphalt, concrete, sand, and artificial turf temperatures throughout the day.</p>
           </article>
           <article class="card card--benefit">
-            <h3>Pack smarter</h3>
-            <p>Get a simple checklist based on the outing and today’s conditions.</p>
+            <h3>Score risk for your dog</h3>
+            <p>The NorthPaw Index adapts to snout profile, coat type, and activity baseline.</p>
           </article>
           <article class="card card--benefit">
-            <h3>Follow through lightly</h3>
-            <p>Get calm reminders for things like muddy paws, tick checks, or seasonal care.</p>
+            <h3>Plan without accounts</h3>
+            <p>Dog portraits, notes, checklists, and reminders stay local on the physical device.</p>
           </article>
         </div>
       </div>
@@ -117,20 +134,20 @@
     <!-- ========== CONDITIONS INTO ACTION ========== -->
     <section class="section section--compact" aria-labelledby="conditions-heading">
       <div class="container">
-        <h2 id="conditions-heading">Conditions, translated into action</h2>
-        <p class="lede-tight">NorthPaw does more than show weather. It helps you understand what today means for your dog outing.</p>
+        <h2 id="conditions-heading">Pavement safety, translated into action</h2>
+        <p class="lede-tight">NorthPaw estimates surface temperatures using local air temperature, wind speed, relative humidity, and solar load from sky cover.</p>
         <div class="insight-grid">
           <article class="insight-card">
-            <h3>See what changed</h3>
-            <p>Rain later, heat, mud, wind, low-light timing.</p>
+            <h3>Thermodynamic timeline</h3>
+            <p>Compare asphalt, concrete, sand, and artificial turf risk windows through the day.</p>
           </article>
           <article class="insight-card">
-            <h3>Know what to adjust</h3>
-            <p>More water, a towel, shorter route, earlier start.</p>
+            <h3>Canine-weighted NPI</h3>
+            <p>Flat-faced, thick-coated, and high-energy dogs receive earlier warnings when conditions demand it.</p>
           </article>
           <article class="insight-card">
-            <h3>Head out with less second-guessing</h3>
-            <p>One quick read, one pack list, one reminder if it matters.</p>
+            <h3>Dynamic checklists</h3>
+            <p>Rain can trigger paw towels, high NPI can flag extra water, and sand or turf can change paw protection notes.</p>
           </article>
         </div>
       </div>
@@ -139,8 +156,8 @@
     <!-- ========== PRODUCT PROOF (lifestyle cards) ========== -->
     <section class="section" aria-labelledby="preview-heading">
       <div class="container">
-        <p class="section-kicker">Product proof</p>
-        <h2 id="preview-heading">A readiness-first approach to dog life outside.</h2>
+        <p class="section-kicker">Release focus</p>
+        <h2 id="preview-heading">Built for the small decisions that make outdoor dog life safer.</h2>
         <div class="preview-grid">
           <article class="preview-block">
             <div class="preview-shot">
@@ -152,8 +169,8 @@
                 loading="lazy" />
             </div>
             <div class="preview-body">
-              <h3>Today’s read</h3>
-              <p>A plain-language take on conditions, the best window to be out, and what changes later.</p>
+              <h3>Surface timeline</h3>
+              <p>A plain-language read on when each selected surface may be comfortable, cautionary, or unsafe.</p>
             </div>
           </article>
           <article class="preview-block">
@@ -166,8 +183,8 @@
                 loading="lazy" />
             </div>
             <div class="preview-body">
-              <h3>Packs &amp; checklists</h3>
-              <p>Short “before you go” lists shaped by where you’re headed, not a pile of generic gear advice.</p>
+              <h3>Profiles &amp; pack lists</h3>
+              <p>Checklist suggestions adjust to weather, selected surfaces, and your dog’s cooling and fatigue profile.</p>
             </div>
           </article>
           <article class="preview-block">
@@ -180,8 +197,8 @@
                 loading="lazy" />
             </div>
             <div class="preview-body">
-              <h3>Field guide</h3>
-              <p>Compact reference you can actually use on the trail. Real outings, not long articles to scroll.</p>
+              <h3>Offline field guide</h3>
+              <p>Local library cards cover hot pavement thresholds, heat stroke signs, plant toxins, and tick detection.</p>
             </div>
           </article>
         </div>
@@ -194,12 +211,12 @@
       <div class="container">
         <h2 id="built-heading">Built for real dog outings</h2>
         <ul class="bullet-list bullet-list--tight">
-          <li>Neighborhood walks that turn into longer outings</li>
-          <li>Weekend trail days</li>
-          <li>Park, beach, and car-based adventures</li>
-          <li>Dog owners who want practical guidance without opening five apps</li>
+          <li>Neighborhood walks across heat-holding pavement</li>
+          <li>Beach days where sand risk changes quickly</li>
+          <li>Sports fields and artificial turf that can spike under sun</li>
+          <li>Trail days that need offline reminders, field cards, and tick checks</li>
         </ul>
-        <p class="note note--closing">NorthPaw is for people who want to be prepared without overcomplicating it.</p>
+        <p class="note note--closing">NorthPaw is for people who want practical safety context without accounts, login walls, or background location tracking.</p>
       </div>
     </section>
 
@@ -210,25 +227,25 @@
         <div class="compare-grid">
           <article class="compare-card">
             <h3>Weather apps</h3>
-            <p>Show the forecast, but leave you to interpret it.</p>
+            <p>Show the forecast, but do not estimate what pavement or turf may feel like to paws.</p>
           </article>
           <article class="compare-card">
             <h3>Pet apps</h3>
-            <p>Track records and routines, but not the outing itself.</p>
+            <p>Track records and routines, but rarely calibrate outing risk to your dog’s physical profile.</p>
           </article>
           <article class="compare-card is-highlight">
             <h3>NorthPaw</h3>
-            <p>Helps you decide what matters now, what to bring, and what to remember later.</p>
+            <p>Combines surface heat modeling, dog-specific NPI scoring, dynamic checklists, and local reminders.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ========== WAITLIST (primary conversion) ========== -->
+    <!-- ========== STAY CONNECTED (primary conversion) ========== -->
     <section id="early-access" class="section form-section section--waitlist" aria-labelledby="access-heading">
       <div class="container">
-        <h2 id="access-heading">Get early access to NorthPaw</h2>
-        <p class="lede-tight">Join the waitlist for launch updates, early testing access, and occasional product previews.</p>
+        <h2 id="access-heading">Stay connected with NorthPaw</h2>
+        <p class="lede-tight">Get release updates, product notes, safety resources, and occasional previews as NorthPaw becomes available.</p>
         <!-- MailerLite embedded form: colors and layout overridden in styles.css (.mailerlite-waitlist-wrap, #mlb2-39779360). -->
         <div class="form-card form-card--primary mailerlite-waitlist-wrap">
           <div id="mlb2-39779360" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-39779360">
@@ -237,9 +254,10 @@
                 <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
                   <div class="ml-form-embedContent">
                     <h4 class="ml-embed-heading">NorthPaw</h4>
-                    <p class="ml-embed-lede">Join the waitlist</p>
+                    <p class="ml-embed-lede">Stay connected</p>
                   </div>
                   <form
+                    id="waitlist-ml-form"
                     class="ml-block-form"
                     action="https://assets.mailerlite.com/jsonp/2262172/forms/184507078984861072/subscribe"
                     data-code=""
@@ -277,7 +295,7 @@
                     </div>
                     <input type="hidden" name="ml-submit" value="1" />
                     <div class="ml-form-embedSubmit">
-                      <button type="submit" class="primary">Join the waitlist</button>
+                      <button type="submit" class="primary">Stay connected</button>
                       <button disabled="disabled" style="display: none" type="button" class="loading">
                         <div class="ml-form-embedSubmitLoad"></div>
                         <span class="sr-only">Loading</span>
@@ -289,14 +307,14 @@
                 <div class="ml-form-successBody row-success" style="display: none">
                   <div class="ml-form-successContent">
                     <h4>Thank you</h4>
-                    <p>You are on the list. Watch your inbox for launch updates.</p>
+                    <p>You are connected. Watch your inbox for NorthPaw updates.</p>
                     <p class="ml-success-hint">A confirmation email is on the way. If you do not see it soon, check your spam or promotions folder.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <p class="form-foot">No spam. Just launch updates and early access.</p>
+          <p class="form-foot">No spam. Just NorthPaw updates and practical outing safety notes.</p>
         </div>
       </div>
     </section>
@@ -304,12 +322,12 @@
     <!-- ========== SURVEY (Tally, new tab) ========== -->
     <section id="survey" class="section form-section section--survey" aria-labelledby="survey-heading">
       <div class="container">
-        <h2 id="survey-heading" class="survey-title">Help shape the first version</h2>
-        <p class="survey-lede">A few quick questions will help prioritize what NorthPaw should do first.</p>
+        <h2 id="survey-heading" class="survey-title">Help shape what comes next</h2>
+        <p class="survey-lede">A few quick questions help prioritize surfaces, guide topics, reminders, and checklist improvements.</p>
         <div class="form-card form-card--survey survey-tally-card">
           <p class="survey-tally-note">NorthPaw Early Feedback on Tally. Opens in a new tab when you continue below.</p>
           <a
-            class="btn btn-secondary btn-block"
+            class="survey-link-primary"
             href="https://tally.so/r/lb7Mxp"
             target="_blank"
             rel="noopener noreferrer"
@@ -322,15 +340,15 @@
   <!-- ========== FOOTER + FINAL CTA ========== -->
   <footer class="site-footer">
     <div class="container footer-cta-band">
-      <h2 class="footer-cta-title">Prepared dogs. Smoother outings.</h2>
-      <p class="footer-cta-lede">NorthPaw is being built to make outdoor dog life simpler, calmer, and easier to trust.</p>
-      <div class="cta-row cta-row--footer">
-        <a class="btn btn-primary" href="#early-access">Join the early access list</a>
+      <h2 class="footer-cta-title">Prepared dogs. Safer surfaces. Better outings.</h2>
+      <p class="footer-cta-lede">NorthPaw helps you understand pavement risk, tailor safety guidance, and keep outing prep close at hand.</p>
+      <div class="cta-row cta-row--footer cta-row--footer-stacked">
+        <a class="btn btn-primary" href="#early-access">Stay connected</a>
         <a
-          class="btn btn-secondary"
+          class="footer-survey-quiet"
           href="https://tally.so/r/lb7Mxp"
           target="_blank"
-          rel="noopener noreferrer">Take the survey</a>
+          rel="noopener noreferrer">60-second survey (optional)</a>
       </div>
     </div>
 
@@ -345,7 +363,8 @@
             href="https://tools.nextstepsbeyond.online"
             target="_blank"
             rel="noopener noreferrer">tools.nextstepsbeyond.online</a>
-          <a href="mailto:nextstepsbeyond.cf@gmail.com">nextstepsbeyond.cf@gmail.com</a>
+          <a href="support/index.html">Support</a>
+          <a href="mailto:cnfiegel@gmail.com">cnfiegel@gmail.com</a>
           <a href="privacy/index.html">Privacy</a>
         </div>
       </div>
@@ -356,13 +375,15 @@
     </div>
   </footer>
 
-  <!-- MailerLite webforms (waitlist): keep after embed markup; requires MailerLite script + success callback -->
+  <!-- MailerLite webforms: keep after embed markup; requires MailerLite script + success callback -->
   <script>
     function ml_webform_success_39779360() {
       var $ = window.ml_jQuery || window.jQuery;
       if (!$) return;
       $(".ml-subscribe-form-39779360 .row-success").show();
       $(".ml-subscribe-form-39779360 .row-form").hide();
+      var heroEmail = document.getElementById("hero-email");
+      if (heroEmail) heroEmail.value = "";
     }
   </script>
   <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v95037e5bac78f29ed026832ca21a7c7b"></script>
