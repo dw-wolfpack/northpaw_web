@@ -1,0 +1,4 @@
+# 301 Permanent Redirect for Cloudflare Pages
+# Preserve all link equity from Popular Science, Boing Boing, and organic search
+https://northpaw.nextstepsbeyond.online/* https://northpawapp.com/:splat 301
+/* https://northpawapp.com/:splat 301
